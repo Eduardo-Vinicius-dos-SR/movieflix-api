@@ -5,6 +5,8 @@
 		"verbatimModuleSyntax": true
 	},
 
+	"resolveJsonModule": true,
+
 	"module": "nodenext",
 	"target": "esnext",
 	"lib": ["esnext"],
