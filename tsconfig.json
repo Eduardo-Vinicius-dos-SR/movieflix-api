@@ -1,29 +1,27 @@
 {
 	"compilerOptions": {
-		"module": "ESNext",
-		"moduleResolution": "bundler",
-		"verbatimModuleSyntax": true
+		"target": "esnext",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"outDir": "dist",
+		"resolveJsonModule": true,
+		"lib": ["esnext"],
+		"types": ["node"],
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"jsx": "react-jsx",
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"noUncheckedSideEffectImports": true,
+		"moduleDetection": "force"
 	},
 
-	"resolveJsonModule": true,
-
-	"module": "nodenext",
-	"target": "esnext",
-	"lib": ["esnext"],
-	"types": ["node"],
-
-	"sourceMap": true,
-	"declaration": true,
-	"declarationMap": true,
-
-	"noUncheckedIndexedAccess": true,
-	"exactOptionalPropertyTypes": true,
-
-	"strict": true,
-	"jsx": "react-jsx",
-	"verbatimModuleSyntax": true,
-	"isolatedModules": true,
-	"noUncheckedSideEffectImports": true,
-	"moduleDetection": "force",
-	"skipLibCheck": true
+	"include": ["src", "swagger.json"],
+	"exclude": ["node_modules"]
 }

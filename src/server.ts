@@ -1,7 +1,9 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import swaggerUi from "swagger-ui-express";
-import swaggerDocument from "../swagger.json";
+import fs from "fs";
+
+const swaggerDocument = JSON.parse(fs.readFileSync(new URL("../swagger.json", import.meta.url), "utf8"));
 
 const port = 3000;
 const app = express();
